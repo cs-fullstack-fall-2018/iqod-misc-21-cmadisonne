@@ -17,14 +17,13 @@
     }
     console.log("New Array: " + newArray);
     var longest = 50;
-    for(j=0; j<longest; j++){
-        longest -= 1;
         for(l=0; l < newArray.length; l++) {
-            if (newArray[l].length === longest) {
-                console.log(newArray[l]);
+            if (newArray[l].length = longest) {
                 console.log(newArray[l] + " is the longest word")
             }
-        }
+            else {
+                longest -= 1;
+            }
     }
 </script>
 
