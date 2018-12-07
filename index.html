@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Misc21</title>
+</head>
+<body>
+<script>
+    var string = "Entry Level Web Development Careers";
+    var stringArr = string.split(" ");
+    var newArray = [];
+    console.log(stringArr);
+    for(i=0; i<stringArr.length; i++){
+        var wordArr = stringArr[i].split('');
+        console.log("Word Array: " + wordArr);
+        newArray.push(wordArr);
+    }
+    console.log("New Array: " + newArray);
+    var longest = 50;
+    for(j=0; j<longest; j++){
+        longest -= 1;
+        for(l=0; l < newArray.length; l++) {
+            if (newArray[l].length === longest) {
+                console.log(newArray[l]);
+                console.log(newArray[l] + " is the longest word")
+            }
+        }
+    }
+</script>
+
+</body>
+</html>
